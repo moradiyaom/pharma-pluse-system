@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #89f7fe, #66a6ff);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+}
+
+h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  grid-column: span 2;
+  padding: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+#grandTotal {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+}
+
+
+
+/* ✅ Header (Fixed at Top) */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  }
+  
+  /* ✅ Navbar */
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #6d4296, #40714f);
+  padding: 15px 30px;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  /* ✅ Logo */
+  .navbar .logo img {
+  width: 60px;          /* medium size */
+  height: 60px;
+  object-fit: cover;    /* keeps aspect ratio */
+  border-radius: 8px;   /* small rounded corners */
+  display: block;
+  }
+  
+  /* ✅ Navigation Links */
+  .navbar .nav-right {
+  flex: 1;
+  text-align: center;
+  }
+  
+  .navbar .nav-right a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 18px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+  }
+  
+  .navbar .nav-right a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffd700;
+  }
+  
+  /* ✅ Logout Button */
+  .navbar .logout-btn {
+  background: #6ec02b;
+  font-weight: bold;
+  color: #0000ff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+  }
+  
+  .navbar .logout-btn:hover {
+  background: #3ce753;
+  }
+  
+  /* ✅ Prevent Content from Hiding under Navbar */
+  body {
+  margin: 0;
+  padding-top: 80px;  /* equal to navbar height */
+  }
+  

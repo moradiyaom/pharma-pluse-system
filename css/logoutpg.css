@@ -1,0 +1,151 @@
+/* Logout box styling */
+.logout-box {
+    width: 380px;
+    padding: 40px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .logout-box i {
+    color: #ff4757;
+    margin-bottom: 20px;
+  }
+  
+  .logout-box h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .logout-box p {
+    font-size: 14px;
+  }
+  
+  .logout-box a {
+    color: #ffd700;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .logout-box a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  
+  /* Background */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(159deg,#213577,#093e2a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Glassmorphism container */
+  .register-form {
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .register-form h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .message {
+    background: rgba(0,0,0,0.5);
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  /* Input fields */
+  .input-group {
+    position: relative;
+    margin: 15px 0;
+  }
+  
+  .input-group i {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #fff;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px 15px 15px 0px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.2);
+    color: #000000;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 25px;
+  }
+  
+  .input-group input:focus {
+    background: rgba(255,255,255,0.3);
+    box-shadow: 0 0 8px rgba(255,255,255,0.7);
+  }
+  
+  /* Button */
+  .btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #00ff9d;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #00cc7d;
+    transform: scale(1.05);
+  }
+  
+  /* Login link */
+  .login-link {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  
+  .login-link a {
+    color: #dcd13b;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Fade animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

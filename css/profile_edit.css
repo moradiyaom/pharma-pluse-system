@@ -1,0 +1,131 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f9;
+}
+
+.dashboard-wrapper {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background: #2c3e50;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar .brand {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .menu li {
+    margin: 10px 0;
+}
+
+.sidebar .menu a {
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 12px 20px;
+    display: block;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.sidebar .menu a:hover,
+.sidebar .menu a.active {
+    background: #34495e;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 240px;
+    padding: 40px;
+    width: 100%;
+}
+
+/* Page title */
+.main-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Message */
+.message {
+    padding: 10px;
+    background: #dff0d8;
+    color: #3c763d;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* Edit Profile Form */
+.profile-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.profile-form input,
+.profile-form textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.profile-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.profile-form button.btn-save {
+    padding: 12px;
+    border: none;
+    background: #27ae60;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.profile-form button.btn-save:hover {
+    background: #1e8449;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .profile-form {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+.sidebar .brand {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .brand h2 a {
+    font-size: 20px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .menu li {
+    margin: 10px 0;
+}
+
+.sidebar .menu a {
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 12px 20px;
+    display: block;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.sidebar .menu a:hover,
+.sidebar .menu a.active {
+    background: #34495e;
+}
+
+/* Main content */
+.dashboard-container {
+    margin-left: 240px;
+    width: calc(100% - 300px);
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #34495e;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.total { border-top: 5px solid #2980b9; }
+.sold { border-top: 5px solid #27ae60; }
+.stock { border-top: 5px solid #f39c12; }
+.revenue { border-top: 5px solid #c0392b; }

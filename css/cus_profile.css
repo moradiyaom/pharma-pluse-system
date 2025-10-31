@@ -1,0 +1,279 @@
+/* ========== Global Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+  display: flex;
+}
+
+/* ========== Sidebar ========== */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: linear-gradient(180deg, #0077b6, #0096c7);
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar .brand h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .brand a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar .menu {
+  list-style: none;
+}
+
+.sidebar .menu li {
+  margin: 12px 0;
+}
+
+.sidebar .menu li a {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.sidebar .menu li a:hover,
+.sidebar .menu li a.active {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+}
+
+/* ========== Profile Container ========== */
+.profile-container {
+  margin-left: 260px;
+  padding: 30px;
+  width: calc(100% - 260px);
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.profile-header h1 {
+  font-size: 28px;
+  color: #0077b6;
+}
+
+.profile-header p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ========== Alerts ========== */
+.alert {
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.alert.success {
+  background: #d1f7d6;
+  color: #207227;
+}
+
+.alert.error {
+  background: #fcdada;
+  color: #a10000;
+}
+
+/* ========== Profile Content ========== */
+.profile-content {
+  display: flex;
+  gap: 25px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Sidebar inside content */
+.profile-sidebar {
+  width: 250px;
+  text-align: center;
+  border-right: 1px solid #eee;
+  padding-right: 20px;
+}
+
+.profile-photo img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0077b6;
+  margin-bottom: 15px;
+}
+
+.upload-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #0077b6;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  background: #023e8a;
+}
+
+.profile-stats {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.profile-stats h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #0077b6;
+}
+
+.stat-item {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Profile Details */
+.profile-details {
+  flex: 1;
+}
+
+.profile-details h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #0077b6;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0077b6;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 119, 182, 0.2);
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Buttons */
+.form-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-primary {
+  background: #0077b6;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #023e8a;
+}
+
+.btn-secondary {
+  background: #ccc;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #aaa;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 992px) {
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-sidebar {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .profile-details {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .profile-container {
+    margin-left: 210px;
+    width: calc(100% - 210px);
+  }
+
+  .profile-photo img {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f4f6f9;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  form input, form select, form button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: green;
+    color: white;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  th {
+    background: #333;
+    color: white;
+  }
+  
+  a {
+    color: red;
+    text-decoration: none;
+  }
+
+  
+/* ✅ Header (Fixed at Top) */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  }
+  
+  /* ✅ Navbar */
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #6d4296, #40714f);
+  padding: 15px 30px;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  /* ✅ Logo */
+  .navbar .logo img {
+  width: 60px;          /* medium size */
+  height: 60px;
+  object-fit: cover;    /* keeps aspect ratio */
+  border-radius: 8px;   /* small rounded corners */
+  display: block;
+  }
+  
+  /* ✅ Navigation Links */
+  .navbar .nav-right {
+  flex: 1;
+  text-align: center;
+  }
+  
+  .navbar .nav-right a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 18px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+  }
+  
+  .navbar .nav-right a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffd700;
+  }
+  
+  /* ✅ Logout Button */
+  .navbar .logout-btn {
+  background: #6ec02b;
+  font-weight: bold;
+  color: #0000ff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+  }
+  
+  .navbar .logout-btn:hover {
+  background: #3ce753;
+  }
+  
+  /* ✅ Prevent Content from Hiding under Navbar */
+  body {
+  margin: 0;
+  padding-top: 80px;  /* equal to navbar height */
+  }
+  
+

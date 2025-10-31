@@ -1,0 +1,81 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    .container { max-width: 1000px; margin: 90px auto 20px; padding: 20px; }
+    .product-page { display: flex; gap: 40px; }
+    .product-img { flex: 1; }
+    .product-img img { width: 100%; max-width: 350px; border-radius: 10px; }
+    .thumbs { display: flex; gap: 10px; margin-top: 10px; }
+    .thumbs img { width: 60px; height: 60px; border-radius: 6px; cursor: pointer; border: 1px solid #ddd; }
+    .product-info { flex: 2; }
+    .product-info h2 { margin-bottom: 10px; }
+    .price { font-size: 22px; font-weight: bold; color: #333; }
+    .mrp { text-decoration: line-through; color: gray; margin-left: 10px; }
+    .discount { background: #ff4d4d; color: white; font-size: 12px; padding: 4px 8px; border-radius: 4px; margin-left: 8px; }
+    .btn { display: inline-block; margin-top: 15px; padding: 12px 24px; background: teal; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; }
+    .btn:hover { background: #00796b; }
+    .breadcrumb { font-size: 14px; margin-bottom: 20px; color: gray; }
+    .breadcrumb a { text-decoration: none; color: teal; }
+
+
+    /* ===== Navbar ===== */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #2c3e50;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 40px;
+}
+
+.navbar .logo img {
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #1abc9c;
+  transition: transform 0.3s ease;
+}
+
+.navbar .logo img:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+
+.navbar .nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-right a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar .nav-right a:hover {
+  background: #1abc9c;
+  color: #fff;
+}
+
+.logout-btn {
+  background: #e74c3c;
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #c0392b;
+}

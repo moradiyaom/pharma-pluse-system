@@ -1,0 +1,182 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #34495e;
+}
+
+/* Form Styles */
+form {
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+}
+
+form label {
+    display: block;
+    margin: 10px 10px 5px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form textarea {
+    width: 1100px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d8e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+    outline: none;
+}
+
+form button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #2980b9;
+}
+
+/* Message Styles */
+.msg {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    color: #27ae60;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+th, td {
+    padding: 14px 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: #3498db;
+    color: #fff;
+    font-weight: 600;
+}
+
+td {
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f1f6fb;
+}
+
+/* Status Badges */
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Status Colors */
+.status.Pending { background: #e67e22; }
+.status.In_Progress { background: #f1c40f; color: #000; }
+.status.Resolved { background: #27ae60; }
+.status.Closed { background: #7f8c8d; }
+
+/* Sidebar Styles */
+.sidebar {
+    width: 220px;
+    background: #2c3e50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .brand {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    background: #1a252f;
+}
+
+.sidebar .brand a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.sidebar ul.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar ul.menu li a:hover,
+.sidebar ul.menu li a.active {
+    background: #3498db;
+    color: #fff;
+}
+
+/* Bottom menu */
+.sidebar ul.bottom-menu {
+    margin-bottom: 20px;
+}
+
+/* Container Shift */
+.container {
+    margin-left: 240px;
+    padding-top: 30px;
+}

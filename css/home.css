@@ -1,0 +1,263 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    padding: 15px 30px;
+}
+.navbar .logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar ul li {
+    margin-left: 20px;
+}
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    background: #16a085;
+}
+
+
+/* Dashboard content */
+.dashboard-content {
+    text-align: center;
+    padding: 50px;
+}
+.dashboard-content h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.dashboard-content p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: white;
+}
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+.card {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card h2 {
+    margin-bottom: 10px;
+}
+.card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.btn {
+    display: inline-block;
+    background: #16a085;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #138d75;
+}
+
+
+ /* ✅ Header (Fixed at Top) */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    }
+    
+    /* ✅ Navbar */
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #6d4296, #40714f);
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    
+    /* ✅ Logo */
+    .navbar .logo img {
+    width: 60px;          /* medium size */
+    height: 60px;
+    object-fit: cover;    /* keeps aspect ratio */
+    border-radius: 8px;   /* small rounded corners */
+    display: block;
+    }
+    
+    /* ✅ Navigation Links */
+    .navbar .nav-right {
+    flex: 1;
+    text-align: center;
+    }
+    
+    .navbar .nav-right a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 18px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+    }
+    
+    .navbar .nav-right a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffd700;
+    }
+    
+    /* ✅ Logout Button */
+    .navbar .logout-btn {
+    background: #6ec02b;
+    font-weight: bold;
+    color: #0000ff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+    }
+    
+    .navbar .logout-btn:hover {
+    background: #3ce753;
+    }
+    
+    /* ✅ Prevent Content from Hiding under Navbar */
+    body {
+    margin: 0;
+    padding-top: 80px;
+    background: linear-gradient(159deg,#213577,#093e2a);  /* equal to navbar height */
+    }    
+
+
+
+/* ✅ Slider Container */
+.slider {
+    position: relative;
+    max-width: 1200px;
+    height: 600px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 90px rgba(0,0,0,0.2);
+  }
+  
+  /* ✅ Slides Wrapper */
+  .slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: slideAnimation 16s infinite;
+  }
+  
+  /* ✅ Each Slide (Flexbox for image+content) */
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    box-sizing: border-box;
+    background: #fff;
+  }
+  
+  /* Left Side Image */
+  .slide-img img {
+    width: 550px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  }
+  
+  /* Right Side Content */
+  .slide-content {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+  }
+  
+  .slide-content h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #222;
+  }
+  
+  .slide-content p {
+    font-size: 20px;
+    color: #444;
+    line-height: 1.5;
+  }
+  
+  /* ✅ Dots Navigation */
+  .navigation-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navigation-dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transition: background 0.3s ease;
+  }
+  
+  .navigation-dots .dot.active {
+    background: #ff5252;
+  }
+  
+  /* ✅ Keyframes for smooth auto sliding */
+  @keyframes slideAnimation {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(0%); }
+  
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+  
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+  
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+  
+    100% { transform: translateX(0%); }
+  }
+  
